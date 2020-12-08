@@ -18,5 +18,7 @@ namespace Democracy.Data.Entities
         [Display(Name = "Descripción")]
         public string Description { get; set; }
 
+        public virtual ICollection<Voting> Votings { get; set; }
+
     }
 }
